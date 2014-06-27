@@ -1,6 +1,7 @@
 .bundle/
-/coverage/
-/log
+coverage/
+log/
+tmp/
 Gemfile.lock
 capybara-*.html
 pkg/
