@@ -1,4 +1,4 @@
-module Proggle
+module Broggle
   module ApplicationHelper
   end
 end

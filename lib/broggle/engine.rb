@@ -1,6 +1,6 @@
-module Proggle
+module Broggle
   class Engine < ::Rails::Engine
-    isolate_namespace Proggle
+    isolate_namespace Broggle
 
     config.generators do |g|
       g.test_framework      :rspec,        :fixture => false

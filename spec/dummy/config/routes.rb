@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Proggle::Engine => "/proggle"
+  mount Broggle::Engine => "/broggle"
 end

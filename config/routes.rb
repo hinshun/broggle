@@ -1,2 +1,2 @@
-Proggle::Engine.routes.draw do
+Broggle::Engine.routes.draw do
 end
