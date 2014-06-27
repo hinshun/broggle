@@ -1,10 +1,6 @@
 # Broggle
 
-i[![Build
-Status](https://travis-ci.org/hinshun/broggle.png?branch=master)](https://travis-ci.org/hinshun/broggle) 
-
-[![Coverage
-Status](https://coveralls.io/repos/hinshun/broggle/badge.png)](https://coveralls.io/r/hinshun/broggle)
+[![Build Status](https://travis-ci.org/hinshun/broggle.png?branch=master)](https://travis-ci.org/hinshun/broggle) [![Coverage Status](https://coveralls.io/repos/hinshun/broggle/badge.png)](https://coveralls.io/r/hinshun/broggle)
 
 TODO: Write a gem description
 
