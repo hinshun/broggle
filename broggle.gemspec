@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rails", "~> 3.2.16"
-
+  
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "capybara", "~> 2.3"
   spec.add_development_dependency "coveralls", "~> 0.7"
