@@ -4,4 +4,8 @@ source "https://rubygems.org"
 # Bundler.require :default, Rails.env
 gem "jquery-rails", "~> 2.3.0"
 
+group :test do
+  gem 'cucumber-rails', require: false
+end
+
 gemspec
