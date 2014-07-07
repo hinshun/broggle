@@ -5,7 +5,7 @@ tmp/
 Gemfile.lock
 capybara-*.html
 pkg/
-spec/dummy/.sass-cache
-spec/dummy/db/*.sqlite3
-spec/dummy/log/*.log
-spec/dummy/tmp/
+spec/dummy-app/.sass-cache
+spec/dummy-app/db/*.sqlite3
+spec/dummy-app/log/*.log
+spec/dummy-app/tmp/
