@@ -1,7 +1,7 @@
 describe Broggle do
   let(:broggle) { build(:broggle) }
 
-  it 'points to master' do
-    expect(broggle.repo.head.name).to eq('refs/heads/master')
+  it 'has 5 branches' do
+    expect(broggle.repo.branches.count).to eq(5)
   end
 end
