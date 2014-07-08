@@ -1,0 +1,3 @@
+[submodule "spec/dummy-git"]
+	path = spec/dummy-git
+	url = http://github.com/hinshun/dummy-git
