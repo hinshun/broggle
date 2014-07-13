@@ -20,7 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 3.2.16"
   spec.add_dependency "rugged"
-  
+  spec.add_dependency "ruby-string-match-scorer"
+
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "coveralls", "~> 0.7"
   spec.add_development_dependency "factory_girl_rails", "~> 4.4"

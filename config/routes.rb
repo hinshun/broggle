@@ -1,5 +1,7 @@
 Broggle::Engine.routes.draw do
   resources :broggles, except: :new, path: '/' do
-    get 'search', on: :collection
+    collection do
+      get 'search/:query', action: 'search', as: 'search'
+    end
   end
 end

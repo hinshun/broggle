@@ -1,1 +1,11 @@
-<h1>Hello World</h1>
+<%# <%= label_tag 'Repositories' %1> %>
+<%# <%= select_tag 'select-repo', '', class: 'repositories', placeholder: 'Pick a repository...', multiple: true %1> %>
+
+<div class="content">
+  <div class="title"><h1>Broggle</h1></div>
+  <div class='selectize-medium'>
+    <%= select_tag 'select-base', '', placeholder: 'Select a base branch' %>
+  </div>
+  </br>
+  <%= select_tag 'select-branches', '', placeholder: 'Select branches to deploy', multiple: true %>
+</div>
