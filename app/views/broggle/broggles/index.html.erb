@@ -1,11 +1,15 @@
-<%# <%= label_tag 'Repositories' %1> %>
-<%# <%= select_tag 'select-repo', '', class: 'repositories', placeholder: 'Pick a repository...', multiple: true %1> %>
-
 <div class="content">
-  <div class="title"><h1>Broggle</h1></div>
-  <div class='selectize-medium'>
-    <%= select_tag 'select-base', '', placeholder: 'Select a base branch' %>
+  <div class="title">
+    <h1>Broggle</h1>
+    <em>Current branch: <%= @current_branch %></em>
   </div>
-  </br>
-  <%= select_tag 'select-branches', '', placeholder: 'Select branches to deploy', multiple: true %>
+  <%= form_tag('broggle/deploy', method: 'post') do %>
+    <div class='selectize-medium'>
+      <%= select_tag 'select-base', '', placeholder: 'Select a base branch' %>
+    </div>
+    </br>
+    <%# <%= select_tag 'select-branches', '', placeholder: 'Select branches to deploy', multiple: true %1> %>
+
+    <div class="input-wrapper"><%= submit_tag("Checkout base branch") %></div>
+  <% end %>
 </div>

@@ -3,12 +3,20 @@ require 'string_scorer'
 
 module Broggle
   class Broggle < ActiveRecord::Base
+    def deploy(branches)
+      repo.checkout(branches)
+    end
+
     def repo
       @repo ||= Rugged::Repository.discover('.')
     end
 
     def branches
       repo.branches
+    end
+
+    def current_branch_name
+      repo.head.name.sub(/^refs\/heads\//, '')
     end
 
     def branches_substring_search(query)
