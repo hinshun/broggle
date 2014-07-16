@@ -58,7 +58,7 @@ $(function() {
       currentQuery = query;
       this.clearOptions();
       $.ajax({
-        url: 'broggle/search/' + encodeURIComponent(query),
+        url: 'search/' + encodeURIComponent(query),
         type: 'GET',
         error: function() {
           callback();
