@@ -67,9 +67,6 @@ $(function() {
           callback(res);
         }
       });
-    },
-    onChange: function(value) {
-      this.clear();
     }
   });
 
