@@ -91,8 +91,4 @@ module RuggedSpecHelper
 
     Rugged::Commit.create(repo, commit_options)
   end
-
-  def broggle_branch
-    repo.branches.select { |b| b.name.start_with?('broggle_') }.first.name
-  end
 end
