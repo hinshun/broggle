@@ -1,11 +1,14 @@
+# Travis-CI Build for broggle
+# see travis-ci.org for details
+
 language: ruby
+
+# Ruby versions to test against
 rvm:
   - 1.9.3
-env:
-  - DB=sqlite
-script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake
+
+script: script/travisbuild
+
 notifications:
   email:
     recipients:

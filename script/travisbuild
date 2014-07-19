@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git config --global user.name 'The rugged tests are fragile'
+git config --global user.email 'The rugged tests are fragile'
+RAILS_ENV=test bundle exec rake db:migrate --trace
+bundle exec rake || exit $?
