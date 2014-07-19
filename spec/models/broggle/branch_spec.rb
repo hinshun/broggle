@@ -1,2 +1,0 @@
-describe Branch do
-end
