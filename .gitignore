@@ -5,6 +5,7 @@ capybara-*.html
 coverage/
 log/
 pkg/
+spec/dummy-git/
 spec/dummy-app/.sass-cache
 spec/dummy-app/db/*.sqlite3
 spec/dummy-app/log/*.log
