@@ -14,9 +14,6 @@ load 'rails/tasks/engine.rake'
 require 'rspec/core'
 require 'rspec/core/rake_task'
 
-desc "Run all specs in spec directory (excluding plugin specs)"
-RSpec::Core::RakeTask.new(:spec => 'app:db:test:prepare') do |task|
-  task.rspec_opts = ['--color', '--format=doc', '--format=Nc']
-end
+RSpec::Core::RakeTask.new(:spec => 'app:db:test:prepare')
 
 task :default => :spec
