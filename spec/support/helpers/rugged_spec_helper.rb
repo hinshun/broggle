@@ -12,25 +12,23 @@ module RuggedSpecHelper
   }
   GIT_FILEMODE_BLOB = 0100644
 
+  mattr_accessor :current_branch
+
   def repo
     @repo ||= Rugged::Repository.new(WORK_DIR.to_s)
-  end
-
-  def current_branch
-    @current_branch
-  end
-
-  def current_branch=(name)
-    @current_branch = name
   end
 
   def prepare_repo
     stub_const "Broggle::Broggle::GIT_PATH", WORK_DIR.to_s
 
-    FileUtils.rm_r Dir.glob(WORK_DIR.join('*'))
+    if Dir.exists? WORK_DIR
+      FileUtils.rm_r Dir.glob(WORK_DIR.join('*'))
 
-    git_dir = WORK_DIR.join '.git'
-    FileUtils.rm_rf git_dir if Dir.exists? git_dir
+      git_dir = WORK_DIR.join '.git'
+      FileUtils.rm_rf git_dir if Dir.exists? git_dir
+    else
+      FileUtils.mkdir WORK_DIR
+    end
 
     new_repo = Rugged::Repository.init_at(WORK_DIR.to_s)
 
