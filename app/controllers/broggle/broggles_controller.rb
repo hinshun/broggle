@@ -20,7 +20,7 @@ module Broggle
     end
 
     def deploy
-      broggle.deploy(params['select-base'])
+      broggle.deploy(params[:branches])
       redirect_to action: "index"
     end
 
