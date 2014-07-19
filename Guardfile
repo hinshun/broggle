@@ -14,12 +14,12 @@ group :specs do
     watch('app/controllers/application_controller.rb') { "spec/features" }
   end
 
-  guard 'cucumber', command_prefix: 'spring', cli: '--no-profile --color --format progress --strict', all_after_pass: false, all_on_start: false, keep_failed: false, bundler: false do
-    # run every updated feature
-    watch(%r{^features/.+\.feature$})
-    # run all features when any supporting files change
-    watch(%r{^features/support/.+$}) { 'features' }
-    # run feature related to changed step definition, if no feature found then run all features
-    watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
-  end
+  # guard 'cucumber', command_prefix: 'spring', cli: '--no-profile --color --format progress --strict', all_after_pass: false, all_on_start: false, keep_failed: false, bundler: false do
+  #   # run every updated feature
+  #   watch(%r{^features/.+\.feature$})
+  #   # run all features when any supporting files change
+  #   watch(%r{^features/support/.+$}) { 'features' }
+  #   # run feature related to changed step definition, if no feature found then run all features
+  #   watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
+  # end
 end
