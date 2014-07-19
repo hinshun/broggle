@@ -1,12 +1,13 @@
+.DS_Store
 .bundle/
-coverage/
-log/
-tmp/
 Gemfile.lock
 capybara-*.html
+coverage/
+log/
 pkg/
 spec/dummy-app/.sass-cache
 spec/dummy-app/db/*.sqlite3
 spec/dummy-app/log/*.log
-spec/dummy-app/tmp/
 spec/dummy-app/public/
+spec/dummy-app/tmp/
+tmp/
