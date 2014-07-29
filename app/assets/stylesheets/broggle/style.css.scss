@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+@import 'variables';
+@import 'sidebar';
 
 body {
   font-family: 'Source Sans Pro', arial, sans-serif;
@@ -14,15 +16,62 @@ body {
 .content {
   width: 960px;
   margin: 0 auto;
-  padding-top: 150px;
+  margin-top: 150px;
 }
 
-.title {
+.broggle-version {
+  position: fixed;
+  color: $secondary-color;
+}
+
+.current-broggle {
+  width: 450px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: $grey;
+  font-size: 14px; }
+
+h4, h5 {
+  text-transform: uppercase;
+  color: $grey;
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 10px;
+}
+
+.branch-counter {
+  float: right;
+  padding: 2px;
+  padding-left: 8px;
+  font-size: 16px;
+  color: #1f313b;
+  background-color: #d2e4ee;
+  border-radius: 3px;
+  width: 25px;
+}
+
+.branch-counter .octicon {
+  margin: 1px 2px 0 0;
+}
+
+.branches {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid $lightergrey;
+  border-bottom: 1px solid $lightergrey;
+}
+
+.branches h4 {
   text-align: center;
-  h1 {
-    margin: 20px 0;
-    font-size: 50px;
-  }
 }
 
 .input-wrapper {
@@ -33,3 +82,4 @@ body {
   width: 250px;
   margin: 0 auto;
 }
+

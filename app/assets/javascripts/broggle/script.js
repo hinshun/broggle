@@ -57,17 +57,20 @@ $(function() {
       if (!query.length) return callback();
       currentQuery = query;
       this.clearOptions();
-      $.ajax({
-        url: 'search/' + encodeURIComponent(query),
-        type: 'GET',
-        error: function() {
-          callback();
-        },
-        success: function(res) {
+      $.getJSON(
+        url = 'broggle/search',
+        data = {query: currentQuery},
+        success = function(res) {
           callback(res);
         }
-      });
+      );
     }
+  });
+
+  $('#broggle-search').selectize({
+    valueField: 'name',
+    labelField: 'name',
+    searchField: 'name'
   });
 
   $('#select-branches').selectize({

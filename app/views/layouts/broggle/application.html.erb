@@ -6,9 +6,13 @@
   <%= javascript_include_tag "broggle/application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="">
 
-<%= yield %>
+<%= render 'layouts/broggle/sidebar' %>
+
+<div class="content">
+  <%= yield %>
+</div>
 
 </body>
 </html>

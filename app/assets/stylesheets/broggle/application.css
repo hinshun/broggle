@@ -12,6 +12,7 @@
  *= require normalize-rails
  *= require selectize
  *= require selectize.default
+ *= require octicons
  *= require broggle/style
  */
 

@@ -9,5 +9,6 @@ gem 'jquery-rails', "~> 2.3.0"
 gem 'sass-rails'
 gem 'normalize-rails'
 gem 'selectize-rails'
+gem 'octicons-rails'
 
 gemspec

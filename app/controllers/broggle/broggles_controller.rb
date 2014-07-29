@@ -1,7 +1,6 @@
 module Broggle
   class BrogglesController < ApplicationController
     def index
-      @current_branch = broggle.current_branch_name
     end
 
     def create
@@ -25,7 +24,7 @@ module Broggle
     end
 
     def search
-      json = broggle.branches_flex_search(params[:query], 10)
+      json = broggle.branches_flex_score(params[:query], 10)
       render json: json
     end
 

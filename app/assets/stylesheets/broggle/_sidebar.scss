@@ -1,0 +1,64 @@
+body.is-sidebar-open .content {
+  transform: translate3d($sidebar-width, 0, 0);
+}
+
+body.is-sidebar-open .sidebar {
+  display: block;
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid $secondary-color;
+  width: $sidebar-width;
+}
+
+.sidebar-content section {
+  margin-bottom: 12px;
+}
+
+.sidebar-subsection {
+  padding-left: 5px;
+}
+
+.sidebar-content {
+  padding: 20px 18px;
+}
+
+.sidebar-header {
+  text-transform: uppercase;
+  border-bottom: 1px solid $secondary-color;
+  margin: 10px 0;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.branch {
+  margin-right: 1px;
+  line-height: 27px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background-color: rgba(209,227,237,0.5);
+  white-space: pre;
+}
+
+.branch .octicon {
+  margin: 1px -2px 0 0;
+  color: #97ABB5;
+}
+
+.branch-name {
+  margin-left: 4px;
+}
+
+.broggles-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
