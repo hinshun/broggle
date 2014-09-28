@@ -31,6 +31,8 @@ module RuggedSpecHelper
     end
 
     new_repo = Rugged::Repository.init_at(WORK_DIR.to_s)
+    new_repo.config['user.name'] = BROGGLER[:name]
+    new_repo.config['user.email'] = BROGGLER[:email]
 
     index = new_repo.index
     commit(new_repo, index.write_tree(new_repo), 'Initial commit')
